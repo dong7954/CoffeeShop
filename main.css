@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*body 초기화*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;  
+}
+
+body{background-color: linen;}
+
+header{
+  text-align:center;
+  height: 120px;
+  margin: 20px;
+}
+
+h1 {
+  margin: 2em 0 1.5em 0;
+}
+
+nav{margin:15px;}
+
+nav {
+  width: 200%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(70deg, #FFDEAD, #CD853F, #DAA520, #DEB887, #a8eb12);
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-menu > li {
+  float: left;
+  position: relative;
+  text-align: left;
+  font-family:md이솝체,helvetica,sans-serif;
+  
+}
+
+#main-menu > li > a {
+  font-size: 1rem;
+  font-family:md개성체,helvetica,sans-serif;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  display: block;
+  padding: 16px 70px;
+  border-right: 2px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+#main-menu > li:nth-child(1) > a {
+  border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+#sub-menu1 {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+}
+#sub-menu2 {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+}
+#sub-menu3 {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+}
+#sub-menu4 {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+  
+}
+#sub-menu5 {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+  z-index: 5;
+  
+}
+
+
+/* 서브메뉴 일일히 다 설정 */
+
+#sub-menu1 > li {
+  text-align: center;
+  background:rgba(210, 180, 140);
+  width:139px;
+  padding: 12px 40px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+#sub-menu1 > li >  a {
+  
+  color: rgba(255,255,255,255.255);
+  text-decoration: none;
+  z-index: 5;
+}
+
+#sub-menu2 > li {
+  text-align: center;
+  background: rgba(210, 180, 140);
+  width:116px;
+  padding: 12px 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+#sub-menu2 > li >  a {
+  
+  color: rgba(255,255,255,255.255);
+  text-decoration: none;
+  z-index: 5;
+}
+
+#sub-menu3 > li {
+  text-align: center;
+  background:rgba(210, 180, 140);
+  width:168px;
+  padding: 12px 40px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+#sub-menu3 > li >  a {
+  
+  color: rgba(255,255,255,255.255);
+  text-decoration: none;
+  z-index: 5;
+}
+
+#sub-menu4 > li {
+  text-align: center;
+  background:rgba(210, 180, 140);
+  width:150px;
+  padding: 12px 40px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+#sub-menu4 > li >  a {
+  
+  color: rgba(255,255,255,255.255);
+  text-decoration: none;
+  z-index: 5;
+}
+
+#sub-menu5 > li {
+  text-align: center;
+  background:rgba(210, 180, 140);
+  width:168px;
+  padding: 12px 40px;
+  border-bottom: 0.5px solid rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+#sub-menu5 > li >  a {
+  
+  color: rgba(255,255,255,255.255);
+  text-decoration: none;
+  z-index: 5;
+}
+
+
+#main-menu > li:hover #sub-menu1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+#main-menu > li:hover #sub-menu2 {
+  opacity: 1;
+  visibility: visible;
+}
+#main-menu > li:hover #sub-menu3 {
+  opacity: 1;
+  visibility: visible;
+}
+#main-menu > li:hover #sub-menu4 {
+  opacity: 1;
+  visibility: visible;
+}
+#main-menu > li:hover #sub-menu5 {
+  opacity: 1;
+  visibility: visible;
+}
+
+#sub-menu1 > li >  a:hover {
+ text-decoration: underline;
+}
+
+* {box-sizing:border-box
+z-index: 3;
+} 
+
+/* 슬라이드쇼 컨테이너의 디자인 */
+.slideshow-container {
+  max-width: auto;
+  max-height: auto;
+  position: relative;
+  margin: auto;
+  z-index: 3;
+}
+
+/* 이미지를 숨기는데 사용 */
+.mySlides {
+    display: none;
+}
+
+/* 다음, 이전 버튼 */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 3;
+}
+
+/* "다음 버튼"을 오른쪽에 위치 */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* 마우스를 올리면 배경색을 변경 */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* 캡션 부분 */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+/* 숫자 부분 위에 적은 (1/3) <-- 이런거 */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* 하단의 점들 */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* 페이드 효과 */
+.slide {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 2.5s;
+  animation-name: slide;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.footer {
+  text-align: right;
+}
